@@ -1,5 +1,5 @@
 
-GIT Repository: 
+GIT Repository: https://github.com/titansumit007/aws-lambda-boto3-assignment.git
 
 # AWS Lambda & Boto3 Automation — Assignment Submission
 

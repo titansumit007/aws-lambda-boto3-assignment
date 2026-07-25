@@ -1,3 +1,6 @@
+
+GIT Repository: 
+
 # AWS Lambda & Boto3 Automation — Assignment Submission
 
 Automation of common AWS operational tasks using Python, Boto3, and Lambda — triggered via EventBridge (scheduled or event-driven) and monitored through CloudWatch Logs.

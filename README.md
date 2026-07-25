@@ -72,8 +72,6 @@ aws-lambda-boto3-assignment/
 14. [Test completed — nothing left in S3 (Final Result)](./assignment-1-s3-cleanup/screenshots/9.2%20Test%20completed.%20Nothing%20in%20S3.png)
 15. [Threshold updated back to 30 days](./assignment-1-s3-cleanup/screenshots/10.%20time%20updated%20to%2030%20days..png)
 
-**Discussion point:** S3 Lifecycle Rules handle simple age-based deletion natively with zero code and zero Lambda cost. Lambda is worth it when deletion depends on conditional logic Lifecycle Rules can't express — e.g., filename/naming-pattern matching, deletion tied to external database state, or triggering a downstream action (SNS alert, DynamoDB log entry) at deletion time.
-
 ---
 
 ## 2. Automated EBS Snapshot Creation and Cleanup
@@ -99,8 +97,6 @@ aws-lambda-boto3-assignment/
 12. [Weekly EBS job scheduled](./assignment-2-ebs-snapshot/screenshots/12.%20weekly%20ebs%20job%20scheduled..png)
 13. [Code pushed to Git](./assignment-2-ebs-snapshot/screenshots/13.%20Code%20pusded%20to%20Git.png)
 14. [Git add and commit](./assignment-2-ebs-snapshot/screenshots/13.%20Git%20add%20and%20commit.png)
-
-**Discussion point:** AWS Data Lifecycle Manager (DLM) is the native, no-code way to schedule EBS snapshots and retention. Lambda is still worth it when you need custom retention logic beyond simple age (e.g., "keep the last 5 regardless of age"), cross-account/cross-region snapshot copies, or a notification fired on each backup cycle.
 
 ---
 
@@ -159,8 +155,6 @@ aws-lambda-boto3-assignment/
 15. [EventBridge rule created](./assignment-4-cost-alert/screenshots/10.1%20Eventbridge%20rule%20created.png)
 16. [Code pushed to Git](./assignment-4-cost-alert/screenshots/11%20code%20pushed%20to%20git.png)
 17. [Additional screenshot](./assignment-4-cost-alert/screenshots/Screenshot%202026-07-25%20205237.png)
-
-**Discussion point:** AWS Budgets is the managed, no-code alternative for simple threshold alerts. Custom Lambda logic is worth it for per-service cost breakdowns, delivery to Slack/Teams instead of email, or anomaly-detection-style logic that Budgets can't express.
 
 ---
 
